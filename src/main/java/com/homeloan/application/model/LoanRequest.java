@@ -8,19 +8,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Transaction {
+public class LoanRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long transactionId;
+    private long loanRequestId;
     private long userId;
-    private long loanId;
-    private double amount;
-    private Date dateTime;
+    private long amount;
+    private long tenure;
+    private String status;
+
 
 }
