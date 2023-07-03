@@ -18,7 +18,7 @@ public class User {
     private long userId;
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long savingsAccountNumber;
-    private String userName;
+    private String username;
     private String password;
     private String name;
     private long salary;
